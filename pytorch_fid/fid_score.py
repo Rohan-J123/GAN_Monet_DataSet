@@ -394,7 +394,7 @@ def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
     # Hardcoded paths
-    paths = ["../monet_jpg", "../generated_jpg_6"]  # Change to the paths you want to use
+    paths = ["../monet_jpg", "../generated_jpg"]  # Change to the paths you want to use
     batch_size = 100
     dims = 2048
 
