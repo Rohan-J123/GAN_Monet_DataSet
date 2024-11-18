@@ -394,7 +394,7 @@ def main(one_s):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
     # Hardcoded paths
-    paths = ["../monet_jpg", one_s]  # Change to the paths you want to use
+    paths = ["/content/GAN_Monet_DataSet/monet_jpg", one_s]  # Change to the paths you want to use
     batch_size = 100
     dims = 2048
 
