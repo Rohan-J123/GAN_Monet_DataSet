@@ -389,12 +389,12 @@ def save_fid_stats(paths, batch_size, device, dims, num_workers=1):
     np.savez_compressed(paths[1], mu=m1, sigma=s1)
 
 
-def main():
+def main(one_s):
     # Hardcoded values for device, batch_size, dims, etc.
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
     # Hardcoded paths
-    paths = ["../monet_jpg", "../generated_jpg"]  # Change to the paths you want to use
+    paths = ["../monet_jpg", one_s]  # Change to the paths you want to use
     batch_size = 100
     dims = 2048
 
