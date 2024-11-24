@@ -1,0 +1,10 @@
+model 0: Starter Code                   => Fid = 126
+model 1: Cyclic GAN                     => Batch Size: 32,      Steps: max(7400, 300) // 8,     Epochs: 4       => Fid = 54
+model 2: Cyclic GAN                     => Batch Size: 8,       Steps: max(7400, 300) // 8,     Epochs: 4       => Fid = 56
+model 3: Cyclic GAN                     => Batch Size: 8,       Steps: min(7400, 300),          Epochs: 50      => FID = 58
+model 4: AugCyc GAN                     => Batch Size: 8,       Steps: max(7400, 300) // 8,     Epochs: 4
+                                        => Batch Size: 8,       Steps: max(7400, 300) // 8,     Epochs: 4       => FID = 27
+model 5: AugCyc GAN                     => Batch Size: 8,       Steps: max(7400, 300) // 32,     Epochs: 4
+                                        => Batch Size: 8,       Steps: max(7400, 300) // 32,     Epochs: 4       => FID = 27
+model 6: AugCyc GAN                     => Batch Size: 8,       Steps: max(7400, 300) // 32,     Epochs: 4
+                                        => Batch Size: 8,       Steps: max(7400, 300) // 32,     Epochs: 8       => FID = 27
